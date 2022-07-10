@@ -1,8 +1,18 @@
-export const Section = ({title, children}) => {
+import PropTypes from 'prop-types';
+import { Title } from './Section.styled';
+
+const Section = ({ title, children }) => {
     return (
         <>
-        <h1>{title}</h1>
+        <Title>{title}</Title>
         <div>{children}</div>
         </>
     )
 }
+
+Section.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.array.isRequired,
+}
+
+export default Section;
