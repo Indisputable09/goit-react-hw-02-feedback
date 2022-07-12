@@ -41,18 +41,18 @@ class Feedback extends Component {
     }
 
     render() {
-        const { state, handleStateClick, countTotalFeedback, countPositiveFeedbackPercentage} = this;
+        const { state, handleStateClick, countTotalFeedback, countPositiveFeedbackPercentage } = this;
         return <>
-        <Container>
-            <Section title="Please leave feedback">
-            <FeedbackOptions options={state} onLeaveFeedback={handleStateClick} />
-            {countTotalFeedback() > 0
-            ? <Statistics options={state} total={countTotalFeedback()} positivePercentage={countPositiveFeedbackPercentage()} />
-            : <h2>There is no feedback</h2>}
-            </Section>
+            <Container>
+                <Section title="Please leave feedback">
+                    <FeedbackOptions options={state} onLeaveFeedback={handleStateClick} />
+                    {countTotalFeedback() > 0
+                        ? <Statistics options={state} total={countTotalFeedback()} positivePercentage={countPositiveFeedbackPercentage()} />
+                        : <h2>There is no feedback</h2>}
+                </Section>
             </Container>
-            </>
-  }
+        </>
+    }
 }
 
 export default Feedback;

@@ -6,7 +6,7 @@ const Statistics = ({ options, total, positivePercentage }) => {
         <List>
             {Object.entries(options).map(item => (
                 <li key={item[0]}><p>{item[0].charAt(0).toUpperCase() + item[0].slice(1)}: {item[1]}</p></li>
-          ))}
+            ))}
             <li><p>Total: {total}</p></li>
             <li><p>Percent: {positivePercentage}%</p></li>
         </List>
