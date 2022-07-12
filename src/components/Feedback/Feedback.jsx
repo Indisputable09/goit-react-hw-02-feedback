@@ -56,21 +56,3 @@ class Feedback extends Component {
 }
 
 export default Feedback;
-
-        // <Section title="Please leave feedback">
-        //   <FeedbackOptions options={state} onLeaveFeedback={handleStateClick}/>
-        //     {countTotalFeedback() > 0
-        //         ? <Statistics options={state} total={countTotalFeedback()} positivePercentage={countPositiveFeedbackPercentage()} />
-        //         : <h2>There is no feedback</h2>}
-        //         </Section>
-
-
-
-// {handleDecision() === 'agree'
-//             ? <Section title="Please leave feedback">
-//           <FeedbackOptions options={state} onLeaveFeedback={handleStateClick}/>
-//             {countTotalFeedback() > 0
-//                 ? <Statistics options={state} total={countTotalFeedback()} positivePercentage={countPositiveFeedbackPercentage()} />
-//                 : <h2>There is no feedback</h2>}
-//                 </Section>
-//             : <p>Next time</p>}
